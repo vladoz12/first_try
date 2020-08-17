@@ -1,6 +1,6 @@
 FROM alpine
 RUN apk add --no-cache curl wget busybox-extras netcat-openbsd python3 py-pip
 RUN pip install awscli
-RUN pip install pandas
+RUN echo 'hello'
 RUN apk --purge -v del py-pip
 CMD tail -f /dev/null
